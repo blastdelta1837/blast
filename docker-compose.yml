@@ -1,0 +1,16 @@
+version: "2"
+services:
+ nginx:
+    build: ./nginx
+    links:
+        - ui:ui
+    ports:
+        - "80:80"
+ ui:
+    environment:
+        - NODE_ENV=development
+        - MONGO_PORT=27017
+        - MONGO_HOST=mongodb
+    build: ./ui
+    ports:
+        - "3002"
