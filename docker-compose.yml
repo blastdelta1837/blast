@@ -13,4 +13,4 @@ services:
         - MONGO_HOST=mongodb
     build: ./ui
     ports:
-        - "3002"
+        - "3002"   

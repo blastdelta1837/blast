@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 app.use(newsession({
   secret: 'bc4ApP456KlI',
   resave: false,
-  saveUninitialized: false,
+  saveUninitialized: false, 
   cookie:{}
 
 }));
