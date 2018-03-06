@@ -19,7 +19,7 @@ app.set('trust proxy', 1);
 app.use(newsession({
   secret: 'bc4ApP456KlI',
   resave: false,
-  saveUninitialized: false,
+  saveUninitialized: false, 
   cookie:{}
 
 }));

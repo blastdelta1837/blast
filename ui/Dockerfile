@@ -25,4 +25,5 @@ WORKDIR /src
 ADD . /src
 
 # Run app using nodemon
-CMD ["npm", "start"] 
+
+CMD ["nodemon", "-L", "server.js"]
